@@ -1,0 +1,25 @@
+<html>
+<body>
+    <form method="post" action="" >
+       <fieldset>
+            <legend> Blood Group </legend>
+            <select name="bloodgroup">
+            <option value="A+">A+</option>         
+            <option value="A-">A-</option>         
+            <option value="AB+">AB+</option>         
+            <option value="AB-">AB-</option>
+            <option value="B-">B-</option>
+            <option value="B+">B+</option>
+            <option value="B-">O+</option>
+            <option value="B-">O-</option>         
+        </select> <br>
+        <hr width="150" align="left">
+        <input type="submit" name="" value="Submit" />
+    </fieldset>
+    </form>
+</body>
+</html>
+<?php
+        $selectedBloodGroup = $_POST["bloodgroup"];
+        echo "$selectedBloodGroup";
+?>
