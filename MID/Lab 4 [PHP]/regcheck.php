@@ -7,18 +7,16 @@
     $gender = $_POST["gender"];
     $dob = $_POST["dob"];
 
-    $errors = [];
-
     if (empty($name) || empty($email) || empty($username) || empty($password) || empty($confirmPassword) || empty($gender) || empty($dob)) {
-        $errors[] = "All fields are required.";
+        echo "All fields are required.";
     }
 
     if ($password !== $confirmPassword) {
-        $errors[] = "Password and Confirm Password do not match.";
+        echo "Password and Confirm Password do not match.";
     }
 
 
-    if (empty($errors)) {
+    else {
        
         echo "Registration successful!";
     } 
