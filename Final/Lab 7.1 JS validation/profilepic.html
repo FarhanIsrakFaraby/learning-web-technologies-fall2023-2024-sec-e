@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Picture</title>
+</head>
+<body>
+
+    <form onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Profile Picture</legend>
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" />
+            <br>
+            <label for="profilePic">Profile Picture:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*" />
+            <br>
+        
+
+        <hr>
+
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <script src="profilepicValidation.js"></script>
+
+</body>
+</html>
