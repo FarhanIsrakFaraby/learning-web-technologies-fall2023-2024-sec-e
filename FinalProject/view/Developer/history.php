@@ -16,7 +16,7 @@ if (isset($_SESSION['username'])) {
 
 <body>
     <header>
-
+    <link rel="stylesheet" href="../Asset/css/history.css">
         <h1 style="text-align: center;">Work History</h1>
 
     </header>

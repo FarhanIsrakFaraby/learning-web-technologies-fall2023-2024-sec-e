@@ -3,13 +3,15 @@
 <head>
     <title>Login</title>
 </head>
-
+<link rel="stylesheet" href="../Asset/css/style.css">
 <body>
     <header>
         <h3 style="text-align:left;">Collborative Management System </h3>
         <section style="text-align: right;">
-            <a href="../index.html">Home</a>|
-            <a href="signup.php">Signup</a>
+            <div id="signup">
+                <a href="../index.html">Home</a>|
+                <a href="signup.php">Signup</a>
+            </div>
         </section>
     </header>
     <main>

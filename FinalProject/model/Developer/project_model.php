@@ -53,4 +53,15 @@ function deleteProject($projectId)
     return $deleteResult;
 }
 
+function getProjectName($NAME)
+{
+    $con = getConnection();
+    $sql = "SELECT * FROM projects WHERE NAME = '$NAME'";
+    $result = mysqli_query($con, $sql);
+    $project = mysqli_fetch_assoc($result);
+
+    return $project;
+}
 ?>
+
+

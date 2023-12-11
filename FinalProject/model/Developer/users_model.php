@@ -9,10 +9,10 @@ class UsersModel {
         $this->conn = $conn;
     }
 
-    public function createUser($name, $username, $email, $gender, $dob, $password, $userType) {
+    public function createUser($name, $username, $email, $gender, $dob, $password, $type) {
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        $query = "INSERT INTO users (name, username, email, gender, dob, password, user_type) VALUES ('$name', '$username', '$email', '$gender', '$dob', '$hashedPassword', '$userType')";
+        $query = "INSERT INTO users (name, username, email, gender, dob, password, user_type) VALUES ('$name', '$username', '$email', '$gender', '$dob', '$hashedPassword', '$type')";
 
         $result = mysqli_query($this->conn, $query);
 

@@ -9,6 +9,7 @@ if (isset($_SESSION['username'])) {
 <html>
 <head>
     <title>View Profile</title>
+    <link rel="stylesheet" href="../Asset/css/profile.css">
 </head>
 <body>
     <header>

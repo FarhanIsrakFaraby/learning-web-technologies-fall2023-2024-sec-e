@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $dob = $_POST["dob"];
   $password = $_POST["password"];
   $confirmPassword = $_POST["confirmPassword"];
-  $userType = $_POST["userType"];
+  $type = $_POST["type"];
 
   if (isEmpty($username)) {
     echo "Username is required.";
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Gender is required.";
   } else if (isEmpty($dob)) {
     echo "Date of Birth is required.";
-  } else if (isEmpty($userType)) {
+  } else if (isEmpty($type)) {
     echo "User Type is required.";
   } else {
     require_once("../model/db_user.php");
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($existingUser) {
       echo "Username already exists.";
     } else {
-      $result = $usersModel->createUser($name, $username, $email, $gender, $dob, $password, $userType);
+      $result = $usersModel->createUser($name, $username, $email, $gender, $dob, $password, $type);
 
       if ($result) {
         header("Location: ../view/login.php?signup=success");
