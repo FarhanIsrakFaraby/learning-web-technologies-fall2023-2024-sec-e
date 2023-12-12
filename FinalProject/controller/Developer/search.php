@@ -1,5 +1,5 @@
 <?php
-require_once('../model/project_model.php');
+require_once('../model/Developer/project_model.php');
 
 $NAME = $_REQUEST['name'];
 $search = getProjectName($NAME);

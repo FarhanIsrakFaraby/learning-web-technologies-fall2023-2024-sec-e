@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../controller/sessionCheck.php');
+require('../controller/Developer/sessionCheck.php');
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
     echo "Welcome, $username!";
@@ -8,7 +8,7 @@ if (isset($_SESSION['username'])) {
 ?>
 
 <?php
-require_once('../model/project_model.php');
+require_once('../model/Developer/project_model.php');
 
 if (isset($_GET['id'])) {
     $projectId = $_GET['id'];
@@ -55,6 +55,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <input type="submit" value="Update">
     </form>
-    <a href="../controller/logout.php">Logout</a>
+    <a href="../controller/DEveloper/logout.php">Logout</a>
 </body>
 </html>

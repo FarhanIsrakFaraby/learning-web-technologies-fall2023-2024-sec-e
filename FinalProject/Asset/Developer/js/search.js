@@ -2,7 +2,7 @@ function searchEmp() {
   let NAME = document.getElementById("search").value;
 
   let xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "../controller/search.php", true);
+  xhttp.open("POST", "../controller/Developer/search.php", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
   xhttp.onreadystatechange = function () {

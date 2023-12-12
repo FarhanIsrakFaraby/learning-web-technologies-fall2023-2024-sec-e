@@ -3,7 +3,7 @@
 <head>
     <title>Login</title>
 </head>
-<link rel="stylesheet" href="../Asset/css/style.css">
+<link rel="stylesheet" href="../Asset/Developer/css/style.css">
 <body>
     <header>
         <h3 style="text-align:left;">Collborative Management System </h3>
@@ -18,7 +18,7 @@
         <div>
             <h3 style="text-align: center;">Login</h3>
         </div>
-        <form action="../controller/loginCheck.php" method="Post" enctype="" style=" justify-content: center; align-items: center; display: flex; ">
+        <form action="../controller/Developer/loginCheck.php" method="Post" enctype="" style=" justify-content: center; align-items: center; display: flex; ">
             <fieldset style="width: 25%;">
                 <table style="width: 100%;">
                     <tr>

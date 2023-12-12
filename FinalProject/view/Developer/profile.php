@@ -9,7 +9,7 @@ if (isset($_SESSION['username'])) {
 <html>
 <head>
     <title>View Profile</title>
-    <link rel="stylesheet" href="../Asset/css/profile.css">
+    <link rel="stylesheet" href="../Asset/Developer/css/profile.css">
 </head>
 <body>
     <header>
@@ -41,7 +41,7 @@ if (isset($_SESSION['username'])) {
         <h2>Project Recommendations</h2>
         <p>No project recommendations at the moment.</p>
     </main>
-    <a href="../controller/logout.php">Logout</a>
+    <a href="../controller/Developer/logout.php">Logout</a>
     <footer>
         <h4 style="text-align: center;">Copyright©2023</h4>
     </footer>

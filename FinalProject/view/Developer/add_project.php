@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../controller/sessionCheck.php');
+require('../controller/Developer/sessionCheck.php');
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
     echo "Welcome, $username!";
@@ -13,7 +13,7 @@ if (isset($_SESSION['username'])) {
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once('../model/project_model.php');
+require_once('../model/Developer/project_model.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $NAME = $_POST['NAME'];
@@ -53,6 +53,6 @@ ini_set('display_errors', 1);
 
         <input type="submit" value="Add Project">
     </form>
-    <a href="../controller/logout.php">Logout</a>
+    <a href="../controller/Developer/logout.php">Logout</a>
 </body>
 </html>

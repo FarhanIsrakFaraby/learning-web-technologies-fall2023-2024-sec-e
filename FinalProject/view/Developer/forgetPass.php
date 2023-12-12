@@ -1,5 +1,5 @@
 <?php
-require_once("../model/users_model.php");
+require_once("../model/Developer/users_model.php");
 ?>
 <html lang="en">
 <head>

@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-require_once('../model/db_user.php');
-require_once('../model/users_model.php');
+require_once('../model/Developer/db_user.php');
+require_once('../model/Developer/users_model.php');
 
 $conn = getConnection();
 
@@ -23,7 +23,7 @@ if ($username == '' || $password == '') {
             
             $_SESSION['user'] = $user;
             $_SESSION['flag'] = true;
-            header('location: ../view/loggedDashboard.php');
+            header('location: ../view/Developer/loggedDashboard.php');
             exit();
             setcookie('flag', 'true', time()+3600, '/');
         } else {
