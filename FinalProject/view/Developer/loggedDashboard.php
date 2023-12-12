@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../controller/Developer/sessionCheck.php');
+require('../../controller/Developer/sessionCheck.php');
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
     echo "Welcome, $username!";
@@ -12,7 +12,7 @@ if (isset($_SESSION['username'])) {
 <html lang="en">
 
 <head>
-<link rel="stylesheet" href="../Asset/Developer/css/dashboard.css">
+<link rel="stylesheet" href="../../Asset/Developer/css/dashboard.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
@@ -35,7 +35,7 @@ if (isset($_SESSION['username'])) {
     <footer>
         <h4 style="text-align: center;">Copyright©2023</h4>
     </footer>
-    <a href="../controller/Developer/logout.php">Logout</a>
+    <a href="../../controller/Developer/logout.php">Logout</a>
 </body>
 
 </html>

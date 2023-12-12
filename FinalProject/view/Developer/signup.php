@@ -7,7 +7,7 @@
     <header>
         <h3 style="text-align:left;">Collaborative Management System </h3>
         <section style="text-align: right;">
-            <a href="../index.html">Home</a>|
+            <a href="../../index.html">Home</a>|
             <a href="signup.php">Signup</a>
         </section>  
     </header>
@@ -19,7 +19,7 @@
         <table width="100%">
             <tr>
                 <td>
-                    <form action="../controller/Developer/signupCheck.php" method="post" id="signupForm" enctype="" style="justify-content: center; align-items: center; display: flex;">
+                    <form action="../../controller/Developer/signupCheck.php" method="post" id="signupForm" enctype="" style="justify-content: center; align-items: center; display: flex;">
                         <fieldset style="width: 35%;">
                             <table style="width: 100%;">
                                 <tr>
@@ -114,6 +114,6 @@
     <footer>
         <h4 style="text-align: center;">Copyright©2023</h4>
     </footer>
-    <script src="../Asset/Developer/js/validation.js"></script>
+    <script src="../../Asset/Developer/js/validation.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  require_once("../model/Developer/users_model.php");
+  require_once("../../model/Developer/users_model.php");
 
   $name = $_POST["name"];
   $username = $_POST["username"];
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else if (isEmpty($type)) {
     echo "User Type is required.";
   } else {
-    require_once("../model/Developer/db_user.php");
+    require_once("../../model/Developer/db_user.php");
     $conn = getConnection();
 
     $usersModel = new UsersModel($conn);
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $result = $usersModel->createUser($name, $username, $email, $gender, $dob, $password, $type);
 
       if ($result) {
-        header("Location: ../view/Developer/login.php?signup=success");
+        header("Location: ../../view/Developer/login.php?signup=success");
         exit();
       } else {
         echo "Error creating user. Please try again.";
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     closeConnection();
   }
 } else {
-  header("Location: ../view/Developer/login.php");
+  header("Location: ../../view/Developer/login.php");
   exit();
 }
 

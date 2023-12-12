@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../controller/Developer/sessionCheck.php');
+require('../../controller/Developer/sessionCheck.php');
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
     echo "Welcome, $username!";
@@ -8,7 +8,7 @@ if (isset($_SESSION['username'])) {
 ?>
 
 <?php
-require_once('../model/Developer/project_model.php');
+require_once('../../model/Developer/project_model.php');
 
 if (isset($_GET['delete_id'])) {
     $deleteId = $_GET['delete_id'];
@@ -28,11 +28,11 @@ $projects = getAllProject();
 <head>
     <title>Code Repository</title>
     <h3 style="text-align:left;">Collborative Management System </h3>
-    <script src="../Asset/Developer/js/search.js"></script>
-    <link rel="stylesheet" href="../Asset/Developer/css/code.css">
+    <script src="../../Asset/Developer/js/search.js"></script>
+    <link rel="stylesheet" href="../../Asset/Developer/css/code.css">
 </head>
 <body>
-    <form action="../controller/DEveloper/addProjectcheck.php" method="post" enctype="">
+    <form action="../../controller/Developer/addProjectcheck.php" method="post" enctype="">
         <a href="loggedDashboard.php">Back</a> |
         <div align="right">
             <input type="text" name="search" id="search" value="" placeholder="Search" />

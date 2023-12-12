@@ -1,7 +1,7 @@
 <?php
 
     session_start();
-    require_once ("../model/Developer/project_model.php");
+    require_once ("../../model/Developer/project_model.php");
 
     $NAME = $_REQUEST['name'];
     $summary = $_REQUEST['summary'];
@@ -18,7 +18,7 @@
 
         if ($addProject)
         {
-            header('location:../view/Developer/code.php');
+            header('location:../../view/Developer/code.php');
         }
         else 
         {

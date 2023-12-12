@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../controller/Developer/sessionCheck.php');
+require('../../controller/Developer/sessionCheck.php');
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
     echo "Welcome, $username!";
@@ -16,7 +16,7 @@ if (isset($_SESSION['username'])) {
 
 <body>
     <header>
-    <link rel="stylesheet" href="../Asset/Developer/css/history.css">
+    <link rel="stylesheet" href="../../Asset/Developer/css/history.css">
         <h1 style="text-align: center;">Work History</h1>
 
     </header>
@@ -49,7 +49,7 @@ if (isset($_SESSION['username'])) {
         <hr>
 
     </main>
-    <a href="../controller/Developer/logout.php">Logout</a>
+    <a href="../../controller/Developer/logout.php">Logout</a>
 </body>
 <footer>
     <h4 style="text-align: center;">Copyright©2023</h4>
